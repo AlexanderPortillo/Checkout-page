@@ -231,6 +231,16 @@ img {
 	font-weight: bold;
 }
 
+.footer {
+	padding: 1rem;
+	text-align: center;
+	color: #696666;
+}
+
+.footer__data a {
+	color: #696666;
+}
+
 @media (max-width: 848px) {
 	.form__title {
 		display: none;
