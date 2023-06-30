@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ! Icon -->
+    <link rel="icon" href="Src/Img/devchallenges.png">
+    <!-- ! Font Awesome -->
+    <script src="https://kit.fontawesome.com/627b2b4bd2.js" defer crossorigin="anonymous"></script>
+    <!-- ! List style -->
+    <link rel="stylesheet" href="Src/Css/index.css">
+    <!-- ! JavaScript -->
+    <script src="Src/Js/index.js" defer></script>
+    <title>Checkout page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title__mobile">Checkout</h1>
+
+        <form action="" class="form">
+            <h1 class="form__title">Checkout</h1>
+
+            <div class="box">
+                <h4 class="box__title">Contact information</h4>
+
+                <label for="email">
+                    <span class="box__span--title">E-mail</span>
+                    <div class="box__input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                            required placeholder="Enter your email">
+                    </div>
+                </label>
+
+                <label for="phone">
+                    <span class="box__span--title">Phone</span>
+                    <div class="box__input">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" name="" id="phone" required
+                            pattern="^\+?\d{1,3}[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}$"
+                            placeholder="Enter your phone">
+                    </div>
+                </label>
+            </div>
+
+            <div class="box">
+                <h4 class="box__title">Shipping address</h4>
+
+                <label for="name">
+                    <span class="box__span--title">Full name</span>
+                    <div class="box__input">
+                        <i class="fas fa-user-circle"></i>
+                        <input type="text" name="" id="name" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.'-]{2,}$" required
+                            placeholder="Rodney Cotton">
+                    </div>
+                </label>
+
+                <label for="address">
+                    <span class="box__span--title">Address</span>
+                    <div class="box__input">
+                        <i class="fas fa-home"></i>
+                        <input type="text" name="" id="address" pattern="[a-zA-Z0-9\s\.,'-]+" required
+                            placeholder="Your address..">
+                    </div>
+                </label>
+
+                <label for="city">
+                    <span class="box__span--title">City</span>
+                    <div class="box__input">
+                        <i class="fas fa-city"></i>
+                        <input type="text" name="" id="city" pattern="[a-zA-Z0-9\s\.,'-]+" required
+                            placeholder="Your city..">
+                    </div>
+                </label>
+
+                <div class="box__container">
+                    <label for="country">
+                        <span class="box__span--title">Country</span>
+                        <div class="box__input">
+                            <i class="fas fa-globe-americas"></i>
+                            <select name="" id="country" required>
+                                <option selected>Your country..</option>
+                                <option>El salvador</option>
+                                <option>Canadá </option>
+                                <option>Rusia</option>
+                            </select>
+                        </div>
+                    </label>
+
+                    <label for="postal">
+                        <span class="box__span--title">Postal code</span>
+                        <div class="box__input">
+                            <i class="fas fa-window-restore"></i>
+                            <input type="text" name="" id="postal" pattern="\d{5}" required
+                                placeholder="Your postal code..">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="box">
+                <label for="checkbox" class="terms">
+                    <input type="checkbox" name="" id="checkbox" required>
+                    <span class="box__span--title">Save this information for next time</span>
+                </label>
+
+                <button type="submit" class="submit--form">Continue</button>
+            </div>
+        </form>
+
+        <div class="product">
+            <div class="product__container">
+                <div class="product__box">
+                    <div class="product__img">
+                        <img src="Src/Img/photo1.png" alt="img">
+                    </div>
+
+                    <div class="product__data">
+                        <div class="product__title">Vintage Backbag</div>
+                        <div class="product__price">
+                            <span class="price__one">$54.99</span>
+                            <span class="price__two">
+                                <del>$94.99</del>
+                            </span>
+                        </div>
+
+                        <div class="product__total vintage">
+                            <i class="fas fa-minus minus"></i>
+                            <span class="total total--product">1</span>
+                            <i class="fas fa-plus plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__box">
+                    <div class="product__img">
+                        <img src="Src/Img/photo2.png" alt="img">
+                    </div>
+
+                    <div class="product__data">
+                        <div class="product__title">Levi Shoes</div>
+                        <div class="product__price">
+                            <span class="price__one">$74.99</span>
+                            <span class="price__two">
+                                <del>$124.99</del>
+                            </span>
+                        </div>
+
+                        <div class="product__total">
+                            <i class="fas fa-minus minus--two"></i>
+                            <span class="total total--product--two">1</span>
+                            <i class="fas fa-plus plus--two"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__container">
+                <hr class="separator">
+                <div class="product__data--end">
+                    <span class="text">Shipping</span>
+                    <span class="price">$19</span>
+                </div>
+
+                <hr class="separator">
+
+                <div class="product__data--end">
+                    <span class="text">Total</span>
+                    <span class="price">$148.98</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
